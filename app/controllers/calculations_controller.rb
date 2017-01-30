@@ -13,4 +13,11 @@ class CalculationsController < ApplicationController
   def sqrt_form
     render("calculations/sqrt_form.html.erb")
   end
+
+  def sqrt
+    @num = params["my_number"].to_f
+
+    @result = @num**0.5
+    render("calculations/sqrt.html.erb")
+  end
 end

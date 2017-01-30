@@ -8,6 +8,6 @@ Rails.application.routes.draw do
 
   get("/square_root_form", {:controller => "calculations", :action => "sqrt_form"})
 
-  get("/calculate/square_root", {:controller => "calculations", "action =>"})
+  get("/calculate_square_root", {:controller => "calculations", :action => "sqrt"})
 
 end
